@@ -13,4 +13,15 @@ module.exports = function(app){
             res.redirect("/")
         })
     })
+    
+    app.post('/eat/:id', function(req, res){
+        var id = req.params.id;
+        db.update({
+            where: {
+                id: id
+            }
+        }).then(function(dbBurger){
+            res.redirect("/")
+        })
+    })
 }

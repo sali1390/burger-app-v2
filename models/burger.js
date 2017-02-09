@@ -2,7 +2,7 @@ var Sequelize = require('sequelize');
 
 var sequelize = require('../config/connection.js');
 
-var Burger = sequelize.define("burger", {
+var Burgers = sequelize.define("burgers", {
     burger_name: {
         type: Sequelize.STRING,
         allowNull: false
@@ -13,7 +13,7 @@ var Burger = sequelize.define("burger", {
     }
 })
 
-Burger.sync();
+Burgers.sync({force:false});
 
-module.exports = Burger;
+module.exports = Burgers;
     
