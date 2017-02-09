@@ -1,0 +1,47 @@
+html { 
+    background: url("../img/bg2.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: bisque;
+}
+
+body {
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.burger-box {
+    margin: 0 20px;   
+}
+
+.titles {
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.bodyText {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.input-field input[type=text]:focus + label {
+     color: #000;
+}
+
+.input-field input[type=text] :focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+}
+
+input:-ms-input-placeholder {  
+color: red !important;  
+}
